@@ -1,0 +1,1 @@
+# msbios-voting-i18n-resource-doctrine
