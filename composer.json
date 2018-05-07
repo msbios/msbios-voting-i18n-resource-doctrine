@@ -1,0 +1,50 @@
+{
+  "name": "msbios/voting-i18n-resource-doctrine",
+  "description": "MSBios Voting I18n Resource Doctrine",
+  "license": "MIT",
+  "keywords": [
+    "php"
+  ],
+  "homepage": "https://github.com/msbios/msbios-voting-i18n-resource-doctrine",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Judzhin Miles",
+      "email": "info@msbios.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MSBios\\Voting\\I18n\\Resource\\Doctrine\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MSBiosTest\\Voting\\I18n\\Resource\\Doctrine\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "msbios/application": "^1.0",
+    "msbios/resource": "^1.0",
+    "msbios/debug": "^1.0",
+    "msbios/test": "^1.0",
+    "msbios/voting-resource-doctrine": "^1.0"
+  },
+  "scripts": {
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": [
+      "@cs-check",
+      "phpunit --colors=always"
+    ],
+    "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
+    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "upload-coverage": "coveralls -v"
+  },
+  "extra": {
+    "zf": {
+      "component": "MSBios\\Voting\\I18n\\Resource\\Doctrine"
+    }
+  }
+}
