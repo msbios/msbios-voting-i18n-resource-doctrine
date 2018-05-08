@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a979ecb1bc806284fcd8595524f3670",
-    "packages": [],
+    "content-hash": "b911f1a8710c519c3059cce93427110b",
+    "packages": [
+        {
+            "name": "msbios/i18n-doctrine",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-i18n-doctrine.git",
+                "reference": "c67916e2066a73e970bd41b3a1f930150e067fa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-i18n-doctrine/zipball/c67916e2066a73e970bd41b3a1f930150e067fa8",
+                "reference": "c67916e2066a73e970bd41b3a1f930150e067fa8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "msbios/debug": "^1.0",
+                "msbios/portal-doctrine": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\I18n\\Doctrine"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\I18n\\Doctrine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios I18n Doctrine",
+            "homepage": "https://github.com/msbios/msbios-i18n-doctrine",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-05-08T13:13:09+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "behat/transliterator",

@@ -23,6 +23,9 @@
       "MSBiosTest\\Voting\\I18n\\Resource\\Doctrine\\": "tests/"
     }
   },
+  "require": {
+    "msbios/i18n-doctrine": "^1.0"
+  },
   "require-dev": {
     "msbios/application": "^1.0",
     "msbios/resource": "^1.0",
